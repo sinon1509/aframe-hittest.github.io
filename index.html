@@ -12,6 +12,7 @@
   </head>
   <body style="margin: 0px; overflow: hidden">
     <a-scene
+    vr-mode-ui="enabled: false"
       webxr="optionalFeatures:  hit-test;overlayElement:#overlay"
       ar-hit-test="target:#box;type:footprint;footprintDepth:0.2;"
       ar-cursor
@@ -27,7 +28,7 @@
       <a-entity
         id="box"
         gltf-model="#treasure-box"
-        scale="1 1 1"
+        scale="0.1 0.1 0.1"
         animation-mixer
         shadow="cast: true; receive: false"
       ></a-entity>
